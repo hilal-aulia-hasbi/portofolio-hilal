@@ -133,19 +133,20 @@
 
         .two-column {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.2fr 0.8fr; /* Disesuaikan agar porsi foto vertikal lebih seimbang */
             gap: 60px;
             width: 100%;
             align-items: center;
         }
 
-        /* Desain Khusus Bingkai Foto Profil Hilal */
+        /* PERBAIKAN BINGKAI & POSISI FOTO HILAL */
         .image-wrapper {
             border-radius: 16px;
             overflow: hidden;
             border: 2px solid #0ea5e9;
-            height: 420px;
-            width: 100%;
+            height: 460px; /* Ditambah tingginya agar pas dengan foto portrait */
+            width: 345px;  /* Lebar disesuaikan standar rasio 3:4 foto formal */
+            justify-self: center;
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
             background: #1e293b;
         }
@@ -154,7 +155,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center top;
+            object-position: center 15%; /* Menggeser titik potong fokus ke atas agar rambut & kepala tidak hilang */
         }
 
         .tiled-content {
@@ -271,7 +272,7 @@
         <div class="content-area">
             <div class="two-column">
                 <div>
-                    <p>Saya adalah siswa kelas XI jurusan <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong> di SMK Wikrama Bogor. Memiliki ketertarikan mendalam pada infrastruktur jaringan, administrasi server, keamanan sistem, dan teknologi cloud.</p>
+                    <p>Saya adalah siswa kelas XI jurusan <strong>Teknik Jaringan Jaringan Komputer dan Telekomunikasi (TJKT)</strong> di SMK Wikrama Bogor. Memiliki ketertarikan mendalam pada infrastruktur jaringan, administrasi server, keamanan sistem, dan teknologi cloud.</p>
                     <p style="margin-top: 20px;">Berfokus pada penyelesaian masalah teknis melalui konfigurasi perangkat keras dan lunak yang presisi, didukung oleh standar kedisiplinan dan profesionalisme Wikrama.</p>
                 </div>
                 <div class="image-wrapper">
@@ -320,7 +321,7 @@
     <div class="slide-container" id="slide5">
         <h2 class="slide-title">Proyek 1: Network & Firewall</h2>
         <div class="content-area">
-            <div class="two-column">
+            <div class="two-column" style="grid-template-columns: 1fr 1fr;">
                 <div class="bullet-list">
                     <ul>
                         <li><i class="fa-solid fa-check-circle"></i> Crimping kabel LAN & Konfigurasi Routerboard.</li>
@@ -332,8 +333,8 @@
                         <span class="tag">MikroTik</span><span class="tag">Firewall</span><span class="tag">Winbox</span>
                     </div>
                 </div>
-                <div class="image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&auto=format&fit=crop" alt="Network Server Hardware">
+                <div style="border-radius:16px; overflow:hidden; border:2px solid #0ea5e9; height:420px;">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&auto=format&fit=crop" alt="Network Server Hardware" style="width:100%; height:100%; object-fit:cover;">
                 </div>
             </div>
         </div>
@@ -342,9 +343,9 @@
     <div class="slide-container" id="slide6">
         <h2 class="slide-title">Proyek 2: Debian Web Stack</h2>
         <div class="content-area">
-            <div class="two-column">
-                <div class="image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=600&auto=format&fit=crop" alt="Linux Command Line Terminal">
+            <div class="two-column" style="grid-template-columns: 1fr 1fr;">
+                <div style="border-radius:16px; overflow:hidden; border:2px solid #0ea5e9; height:420px;">
+                    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=600&auto=format&fit=crop" alt="Linux Command Line Terminal" style="width:100%; height:100%; object-fit:cover;">
                 </div>
                 <div class="bullet-list">
                     <ul>
@@ -364,7 +365,7 @@
     <div class="slide-container" id="slide7">
         <h2 class="slide-title">Proyek 3: Cloud Infrastructure</h2>
         <div class="content-area">
-            <div class="two-column">
+            <div class="two-column" style="grid-template-columns: 1fr 1fr;">
                 <div class="bullet-list">
                     <ul>
                         <li><i class="fa-solid fa-check-circle"></i> Deployment Amazon EC2 & Security Groups.</li>
@@ -376,8 +377,8 @@
                         <span class="tag">AWS EC2</span><span class="tag">VPC</span><span class="tag">Auto Scaling</span>
                     </div>
                 </div>
-                <div class="image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" alt="Cloud Data Technology">
+                <div style="border-radius:16px; overflow:hidden; border:2px solid #0ea5e9; height:420px;">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" alt="Cloud Data Technology" style="width:100%; height:100%; object-fit:cover;">
                 </div>
             </div>
         </div>
@@ -406,7 +407,7 @@
         <div class="content-area">
             <div class="bullet-list">
                 <p style="margin-bottom: 30px; font-style: italic;">Sebagai siswa SMK Wikrama Bogor, saya membawa nilai-nilai:</p>
-                <div class="two-column">
+                <div class="two-column" style="grid-template-columns: 1fr 1fr;">
                     <ul>
                         <li><i class="fa-solid fa-star"></i> Kedisiplinan Tinggi & Tepat Waktu.</li>
                         <li><i class="fa-solid fa-star"></i> Kemampuan Belajar Cepat (Fast Learner).</li>
