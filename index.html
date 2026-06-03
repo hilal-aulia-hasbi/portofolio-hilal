@@ -65,7 +65,7 @@
             position: relative;
             width: 1280px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            scroll-margin-top: 20px;
+            scroll-margin-top: 90px;
         }
 
         /* Abstract Background Decoration */
@@ -159,26 +159,26 @@
 
         .tiled-content {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
             width: 100%;
         }
 
         .tile {
             background: rgba(30, 41, 59, 0.5);
-            padding: 35px;
+            padding: 25px 35px;
             border-radius: 16px;
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .tile .icon {
-            font-size: 40px;
+            font-size: 36px;
             color: #0ea5e9;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
 
-        .tile h3 { font-size: 24px; margin-bottom: 12px; }
-        .tile p { font-size: 16px; color: #94a3b8; }
+        .tile h3 { font-size: 22px; margin-bottom: 8px; }
+        .tile p { font-size: 16px; color: #94a3b8; margin: 0; }
 
         .bullet-list ul { list-style: none; padding: 0; }
         .bullet-list li {
@@ -250,6 +250,8 @@
         <a href="#slide5">Proyek 1</a>
         <a href="#slide6">Proyek 2</a>
         <a href="#slide7">Proyek 3</a>
+        <a href="#slide8">Tools</a>
+        <a href="#slide9">Karakter</a>
         <a href="#slide12">Kontak</a>
     </div>
 
@@ -259,7 +261,7 @@
             <p class="subtitle">Persiapan Praktik Kerja Lapangan (PKL) - SMK Wikrama Bogor</p>
             <div style="margin-top: 40px;">
                 <h2 style="font-size: 32px; font-weight: 500;">Hilal Aulia Hasbi</h2>
-                <p style="color: #64748b; margin-top: 10px;">Network Engineer & Cloud Enthusiast</p>
+                <p style="color: #64748b; margin-top: 10px;">Network Engineer, Cyber Security & Cloud Enthusiast</p>
             </div>
         </div>
     </div>
@@ -269,11 +271,11 @@
         <div class="content-area">
             <div class="two-column">
                 <div>
-                    <p>Saya adalah siswa kelas XI jurusan <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong> di SMK Wikrama Bogor. Memiliki ketertarikan mendalam pada infrastruktur jaringan, administrasi server, dan teknologi cloud.</p>
+                    <p>Saya adalah siswa kelas XI jurusan <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong> di SMK Wikrama Bogor. Memiliki ketertarikan mendalam pada infrastruktur jaringan, administrasi server, keamanan sistem, dan teknologi cloud.</p>
                     <p style="margin-top: 20px;">Berfokus pada penyelesaian masalah teknis melalui konfigurasi perangkat keras dan lunak yang presisi, didukung oleh standar kedisiplinan dan profesionalisme Wikrama.</p>
                 </div>
                 <div class="image-wrapper">
-                    <img src="hilal_photo,jpg" alt="Foto Profil Hilal Aulia Hasbi">
+                    <img src="hilal_photo.jpg" alt="Foto Profil Hilal Aulia Hasbi">
                 </div>
             </div>
         </div>
@@ -282,23 +284,25 @@
     <div class="slide-container" id="slide3">
         <h2 class="slide-title">Keahlian Teknis</h2>
         <div class="content-area">
-<div class="tiled-content" style="grid-template-columns: repeat(2, 1fr); gap: 20px;">
+            <div class="tiled-content">
                 <div class="tile">
-                    <div class="icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
                     <h3>Networking & Security</h3>
-                    <p>Konfigurasi MikroTik Router & Switch, Manajemen Bandwidth, VLAN, serta pengamanan jaringan menggunakan <strong>OPNsense Firewall</strong> dan <strong>Suricata IDS/IPS</strong> untuk deteksi ancaman real-time.</p>
+                    <p>Konfigurasi MikroTik Router & Switch, VLAN, QoS, serta pengamanan jaringan menggunakan <strong>OPNsense Firewall</strong> dan <strong>Suricata IDS/IPS</strong> untuk deteksi ancaman real-time.</p>
                 </div>
                 <div class="tile">
                     <div class="icon"><i class="fa-solid fa-server"></i></div>
                     <h3>SysAdmin & Monitoring</h3>
-                    <p>Instalasi Linux Debian & Windows Server, serta implementasi sistem monitoring infrastruktur IT secara terpusat menggunakan <strong>Zabbix Monitoring Server</strong>.</p>
+                    <p>Instalasi Linux Debian & Windows Server, manajemen service (Web, DNS, DHCP), serta implementasi server monitoring terpusat menggunakan <strong>Zabbix Server</strong>.</p>
                 </div>
                 <div class="tile" style="grid-column: span 2;">
                     <div class="icon"><i class="fa-solid fa-cloud"></i></div>
-                    <h3>Cloud Computing</h3>
-                    <p>Implementasi AWS Services: EC2, VPC, Load Balancing, dan Auto Scaling untuk arsitektur server yang andal dan mudah dikembangkan.</p>
+                    <h3>Cloud Computing (AWS)</h3>
+                    <p>Implementasi arsitektur cloud menggunakan Amazon Web Services (AWS) meliputi manajemen Amazon EC2, VPC, Elastic IP, Load Balancing, dan Auto Scaling.</p>
                 </div>
             </div>
+        </div>
+    </div>
 
     <div class="slide-container" id="slide4">
         <div class="section-title-layout">
@@ -385,18 +389,13 @@
             <div class="tiled-content">
                 <div class="tile">
                     <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                    <h3>Network Tools</h3>
-                    <p>Winbox, Putty, Cisco Packet Tracer.</p>
+                    <h3>Network & Security Tools</h3>
+                    <p>Winbox, PuTTY, OPNsense, Suricata, Cisco Packet Tracer.</p>
                 </div>
                 <div class="tile">
-                    <div class="icon"><i class="fa-solid fa-box-open"></i></div>
-                    <h3>Virtualization</h3>
-                    <p>Vmware untuk simulasi server Debian & Windows.</p>
-                </div>
-                <div class="tile">
-                    <div class="icon"><i class="fa-solid fa-terminal"></i></div>
-                    <h3>Cloud & Server OS</h3>
-                    <p>AWS Console, Linux Debian.</p>
+                    <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Monitoring & Virtualization</h3>
+                    <p>Zabbix Monitoring System, Oracle VM VirtualBox.</p>
                 </div>
             </div>
         </div>
@@ -413,8 +412,8 @@
                         <li><i class="fa-solid fa-star"></i> Kemampuan Belajar Cepat (Fast Learner).</li>
                     </ul>
                     <ul>
-                        <li><i class="fa-solid fa-star"></i> Terbiasa Bekerja dengan Standar SOP.</li>
-                        <li><i class="fa-solid fa-star"></i> Integritas & Kejujuran Akademik.</li>
+                        <li><i class="fa-solid fa-star"></i> Terbiasa Bekerja dengan Standar SOP Industri.</li>
+                        <li><i class="fa-solid fa-star"></i> Integritas & Kejujuran Profesional.</li>
                     </ul>
                 </div>
             </div>
@@ -429,14 +428,14 @@
                 <div class="number-box"><span class="num">02</span><span class="label">Problem Solving</span></div>
                 <div class="number-box"><span class="num">03</span><span class="label">Profesionalisme</span></div>
             </div>
-            <p style="text-align: center; margin-top: 50px; max-width: 900px; align-self: center;">Membantu perusahaan dalam manajemen infrastruktur IT harian sambil menyerap ilmu praktis dari para profesional di industri.</p>
+            <p style="text-align: center; margin-top: 50px; max-width: 900px; align-self: center;">Membantu perusahaan dalam manajemen infrastruktur IT harian serta penanganan sistem keamanan cyber sambil menyerap ilmu praktis dari industri.</p>
         </div>
     </div>
 
     <div class="slide-container" id="slide11">
         <h2 class="slide-title">Visi</h2>
         <div class="content-area" style="text-align: center;">
-            <p style="font-size: 40px; font-family: 'Poppins'; color: #f8fafc; font-style: italic;">"Ilmu yang Amaliah, Amal yang Ilmiah, Akhlaqul Karimah."</p>
+            <p style="font-size: 40px; font-family: 'Poppins'; color: #f8fafc; font-style: italic;">""Ilmu yang Amaliah, Amal yang Ilmiah, Akhlaqul Karimah."</p>
             <cite style="color: #0ea5e9; font-size: 20px;">- Motto SMK Wikrama Bogor</cite>
         </div>
     </div>
@@ -444,10 +443,10 @@
     <div class="slide-container" id="slide12">
         <div class="title-layout">
             <h2 style="font-size: 48px; margin-bottom: 30px;">Mari Berdiskusi</h2>
-            <p style="margin-bottom: 40px;">Saya siap untuk berkontribusi di perusahaan Anda.</p>
+            <p style="margin-bottom: 40px;">Saya siap untuk berkontribusi secara produktif di perusahaan Anda.</p>
             <div style="background: rgba(30, 41, 59, 0.5); padding: 30px; border-radius: 20px; display: inline-block;">
-                <p style="color: #f8fafc;"><i class="fa-solid fa-envelope" style="color: #0ea5e9; margin-right: 15px;"></i> hilalaulia@email.com</p>
-                <p style="color: #f8fafc;"><i class="fa-brands fa-whatsapp" style="color: #0ea5e9; margin-right: 15px;"></i> +62 821 2405 9479</p>
+                <p style="color: #f8fafc; font-size: 18px;"><i class="fa-solid fa-envelope" style="color: #0ea5e9; margin-right: 15px;"></i> hilalaulia@email.com</p>
+                <p style="color: #f8fafc; font-size: 18px; margin-top: 10px;"><i class="fa-brands fa-whatsapp" style="color: #0ea5e9; margin-right: 15px;"></i> +62 821 2405 9479</p>
             </div>
         </div>
     </div>
