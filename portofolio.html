@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio PKL TJKT - Hilal Aulia Hasbi</title>
+    <style>
+        :root {
+            --bg-dark: #0a0e17; /* Warna latar belakang utama */
+            --bg-card: #151b29; /* Warna latar belakang kartu/section */
+            --primary-color: #007bff; /* Warna aksen utama (biru) */
+            --primary-glow: rgba(0, 123, 255, 0.4);
+            --text-main: #e2e8f0; /* Warna teks utama */
+            --text-muted: #94a3b8; /* Warna teks pudar */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Perubahan: Header memiliki background solid gelap */
+        header {
+            background-color: var(--bg-dark); /* Solid dark background */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #fff;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Section Baru: Tentang Saya dengan Foto */
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* Foto:Teks (1:2) */
+            gap: 40px;
+            align-items: center;
+        }
+
+        .profile-photo-container {
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%; /* Membuat foto melingkar */
+            border: 4px solid var(--primary-color); /* Bingkai biru */
+            box-shadow: 0 0 20px var(--primary-glow); /* Efek cahaya biru */
+            clip-path: circle(50% at 50% 50%); /* Menghilangkan bagian luar lingkaran */
+        }
+
+        .about-content {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px var(--primary-glow);
+            border-color: var(--primary-color);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: block;
+            margin-top: auto;
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px var(--primary-glow);
+        }
+
+        .quote-section {
+            background-color: var(--bg-card);
+            text-align: center;
+            padding: 50px 20px;
+            margin: 40px 10%;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .quote-section h3 {
+            font-style: italic;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            background-color: #05080f;
+            padding: 60px 20px;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact .email {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+            display: block;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #05080f;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        @media (max-width: 900px) {
+            .about-section {
+                grid-template-columns: 1fr; /* Stack foto di atas teks */
+                text-align: center;
+            }
+            .profile-photo {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            section { padding: 50px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="subtitle">Portofolio Persiapan Praktik Kerja Lapangan (PKL) - SMK Wikrama Bogor</p>
+        <h1>Hilal Aulia Hasbi</h1>
+        <h2>Network Engineer & Cloud Enthusiast</h2>
+    </header>
+
+    <section>
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-section">
+            <div class="profile-photo-container">
+                <img src="hilal_photo.jpg" alt="Foto Profil Hilal Aulia Hasbi" class="profile-photo">
+            </div>
+            <div class="about-content">
+                <p>
+                    Saya adalah siswa kelas XI jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT) di SMK Wikrama Bogor. Memiliki ketertarikan mendalam pada infrastruktur jaringan, administrasi server, dan teknologi cloud. Berfokus pada penyelesaian masalah teknis melalui konfigurasi perangkat keras dan lunak yang presisi, didukung oleh standar kedisiplinan dan profesionalisme Wikrama.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #0b101a;">
+        <h2 class="section-title">Keahlian Teknis</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Networking</h3>
+                <p>Konfigurasi MikroTik Router & Switch, Manajemen Bandwidth, VLAN, dan Firewall Security.</p>
+            </div>
+            <div class="card">
+                <h3>SysAdmin</h3>
+                <p>Instalasi & konfigurasi Linux Debian (Apache, Nginx, MySQL) dan Windows Server.</p>
+            </div>
+            <div class="card">
+                <h3>Cloud Computing</h3>
+                <p>Implementasi AWS Services: EC2, VPC, Load Balancing, dan Auto Scaling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Portofolio Proyek</h2>
+        <p style="text-align: center; margin-bottom: 40px; color: var(--text-muted);">Dokumentasi Teknis Berdasarkan LKPD Praktikum</p>
+        <div class="grid-container">
+            
+            <div class="card">
+                <div>
+                    <h3>Proyek 1</h3>
+                    <ul>
+                        <li>Crimping kabel LAN & Konfigurasi Routerboard.</li>
+                        <li>Konfigurasi Hotspot & Web Bypass Access.</li>
+                        <li>Security: Block port 22 (SSH), 23, dan 80.</li>
+                        <li>Integrasi AWS IP melalui DNS Static MikroTik.</li>
+                    </ul>
+                </div>
+                <a href="dokumentasi-proyek1.html" class="btn">Lihat Dokumentasi Foto</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Proyek 2</h3>
+                    <ul>
+                        <li>Instalasi Debian & Konfigurasi IP, SSH, Repo.</li>
+                        <li>Services: DHCP, DNS, Apache2, Nginx.</li>
+                        <li>Database: MariaDB, MySQL.</li>
+                        <li>Deployment: WordPress via Git Clone.</li>
+                    </ul>
+                </div>
+                <a href="dokumentasi-proyek2.html" class="btn">Lihat Dokumentasi Foto</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Proyek 3</h3>
+                    <ul>
+                        <li>Deployment Amazon EC2 & Security Groups.</li>
+                        <li>Konfigurasi VPC & Elastic IP Address.</li>
+                        <li>Load Balancing & Auto Scaling Management.</li>
+                        <li>Launch Template untuk standardisasi server.</li>
+                    </ul>
+                </div>
+                <a href="dokumentasi-proyek3.html" class="btn">Lihat Dokumentasi Foto</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section style="background-color: #0b101a;">
+        <h2 class="section-title">Tools & Lingkungan Kerja</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Tools & Karakter</h3>
+                <ul>
+                    <li><strong>Network Tools:</strong> Winbox, Putty, Cisco Packet Tracer.</li>
+                    <li><strong>Virtualization:</strong> Vmware untuk simulasi server Debian & Windows.</li>
+                    <li><strong>Cloud& Server OS:</strong> AWS Console, Linux Debian.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Nilai & Karakter</h3>
+                <p style="margin-bottom: 10px; color: var(--text-muted);">Sebagai siswa SMK Wikrama Bogor, saya membawa nilai-nilai:</p>
+                <ul>
+                    <li>Kedisiplinan Tinggi & Tepat Waktu.</li>
+                    <li>Kemampuan Belajar Cepat (Fast Learner).</li>
+                    <li>Terbiasa Bekerja dengan Standar SOP.</li>
+                    <li>Integritas & Kejujuran Akademik.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quote-section">
+        <h3>"Ilmu yang Amaliah, Amal yang Ilmiah, Akhlaqul Karimah."</h3>
+        <p>- Motto SMK Wikrama Bogor (Visi)</p>
+    </div>
+
+    <section>
+        <h2 class="section-title">Target Praktik Kerja Lapangan</h2>
+        <p style="text-align: center; margin-bottom: 40px; color: var(--text-muted);">Membantu perusahaan dalam manajemen infrastruktur IT harian sambil menyerap ilmu praktis dari para profesional di industri.</p>
+        <div class="grid-container" style="text-align: center;">
+            <div class="card">
+                <h3>01</h3>
+                <p>Implementasi Real</p>
+            </div>
+            <div class="card">
+                <h3>02</h3>
+                <p>Problem Solving</p>
+            </div>
+            <div class="card">
+                <h3>03</h3>
+                <p>Profesionalisme</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2 class="section-title">Mari Berdiskusi</h2>
+        <p>Saya siap untuk berkontribusi di perusahaan Anda.</p>
+        <p class="email">hilalaulia@email.com</p>
+        <p style="color: var(--text-muted); margin-top: 10px;">+62 821 2405 9479</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hilal Aulia Hasbi - Portofolio</p>
+    </footer>
+
+</body>
+</html>
