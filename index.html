@@ -18,7 +18,7 @@
             align-items: center;
             gap: 40px;
             margin: 0;
-            padding: 100px 20px 40px 20px; /* Disesuaikan agar tidak tertutup navbar */
+            padding: 100px 20px 40px 20px;
             min-height: 100vh;
         }
 
@@ -36,7 +36,7 @@
             gap: 15px;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
             max-width: 95%;
-            overflow-x: auto; /* Biar menu bisa di-swwip/geser di HP */
+            overflow-x: auto;
             white-space: nowrap;
         }
 
@@ -62,14 +62,14 @@
             display: flex;
             flex-direction: column;
             font-family: 'Urbanist', sans-serif;
-            min-height: 650px; /* Menggunakan min-height agar bisa memanjang ke bawah di HP */
+            min-height: 650px;
             height: auto;
             justify-content: center;
             overflow: hidden;
             padding: 40px;
             position: relative;
             width: 100%;
-            max-width: 1280px; /* Batas maksimal di laptop */
+            max-width: 1280px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             scroll-margin-top: 90px;
         }
@@ -264,12 +264,12 @@
             p, li { font-size: 16px; }
 
             .two-column {
-                grid-template-columns: 1fr; /* Kolom kiri kanan berubah jadi atas bawah di HP */
+                grid-template-columns: 1fr;
                 gap: 30px;
             }
 
             .tiled-content {
-                grid-template-columns: 1fr; /* Kotak keahlian jadi memanjang ke bawah */
+                grid-template-columns: 1fr;
             }
 
             .tile style[grid-column] {
@@ -278,7 +278,7 @@
 
             .image-wrapper {
                 width: 260px;
-                height: 346px; /* Tetap menjaga rasio 3:4 foto Hilal */
+                height: 346px;
             }
 
             .number-box .num { font-size: 45px; }
@@ -299,6 +299,7 @@
         <a href="#slide7">Proyek 3</a>
         <a href="#slide8">Tools</a>
         <a href="#slide9">Karakter</a>
+        <a href="#sertifikasi">Sertifikat</a>
         <a href="#slide12">Kontak</a>
     </div>
 
@@ -338,12 +339,12 @@
                 <div class="tile">
                     <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
                     <h3>Networking & Security</h3>
-                    <p>Konfigurasi MikroTik Router & Switch, VLAN, serta pengamanan jaringan menggunakan <strong>OPNsense Firewall</strong></p>
+                    <p>Konfigurasi MikroTik Router & Switch, VLAN, serta pengamanan jaringan menggunakan <strong>OPNsense Firewall</strong> </p>
                 </div>
                 <div class="tile">
                     <div class="icon"><i class="fa-solid fa-server"></i></div>
                     <h3>SysAdmin & Monitoring</h3>
-                    <p>Instalasi Linux Debian , manajemen service (Web, DNS, DHCP), serta implementasi server monitoring terpusat menggunakan <strong>Zabbix Server</strong>.</p>
+                    <p>Instalasi Linux Debian & Windows Server, manajemen service (Web, DNS, DHCP), serta implementasi server monitoring terpusat menggunakan <strong>Zabbix Server</strong>.</p>
                 </div>
                 <div class="tile" style="grid-column: span 2;">
                     <div class="icon"><i class="fa-solid fa-cloud"></i></div>
@@ -368,7 +369,7 @@
         </div>
     </div>
 
- <!-- Slide 5: Proyek 1 -->
+    <!-- Slide 5: Proyek 1 -->
     <div class="slide-container" id="slide5">
         <h2 class="slide-title">Proyek 1: Network & Firewall</h2>
         <div class="content-area">
@@ -383,7 +384,6 @@
                     <div class="tech-tags" style="margin-bottom: 20px;">
                         <span class="tag">MikroTik</span><span class="tag">Firewall</span><span class="tag">Winbox</span>
                     </div>
-                    <!-- TOMBOL DOKUMENTASI PROYEK 1 -->
                     <a href="https://docs.google.com/document/d/1KS7GO0jPLihqHqIwJf4sP98M6cDhNLAx/edit?usp=drive_link&ouid=113099956698033087957&rtpof=true&sd=true" target="_blank" class="tag" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(14, 165, 233, 0.2); border: 1px solid #0ea5e9; color: #0ea5e9; transition: all 0.3s;" onmouseover="this.style.background='#0ea5e9'; this.style.color='#fff';" onmouseout="this.style.background='rgba(14, 165, 233, 0.2)'; this.style.color='#0ea5e9';">
                         <i class="fa-solid fa-folder-open"></i> Lihat Dokumentasi LKPD
                     </a>
@@ -406,14 +406,13 @@
                 <div class="bullet-list">
                     <ul>
                         <li><i class="fa-solid fa-check-circle"></i> Linux Debian Installation & IP, SSH, Repo Config.</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Services: DHCP, DNS, Apache2, EngineX.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Services: DHCP, DNS, Apache2.</li>
                         <li><i class="fa-solid fa-check-circle"></i> Database: MariaDB, MySQL, PhpMyAdmin.</li>
                         <li><i class="fa-solid fa-check-circle"></i> Deployment: WordPress via Git Clone.</li>
                     </ul>
                     <div class="tech-tags" style="margin-bottom: 20px;">
                         <span class="tag">Debian</span><span class="tag">LEMP Stack</span><span class="tag">Git</span>
                     </div>
-                    <!-- TOMBOL DOKUMENTASI PROYEK 2 -->
                     <a href="https://docs.google.com/document/d/1KS7GO0jPLihqHqIwJf4sP98M6cDhNLAx/edit?usp=drive_link&ouid=113099956698033087957&rtpof=true&sd=true" target="_blank" class="tag" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(14, 165, 233, 0.2); border: 1px solid #0ea5e9; color: #0ea5e9; transition: all 0.3s;" onmouseover="this.style.background='#0ea5e9'; this.style.color='#fff';" onmouseout="this.style.background='rgba(14, 165, 233, 0.2)'; this.style.color='#0ea5e9';">
                         <i class="fa-solid fa-folder-open"></i> Lihat Dokumentasi LKPD
                     </a>
@@ -437,77 +436,9 @@
                     <div class="tech-tags" style="margin-bottom: 20px;">
                         <span class="tag">AWS EC2</span><span class="tag">VPC</span><span class="tag">Auto Scaling</span>
                     </div>
-                    <!-- TOMBOL DOKUMENTASI PROYEK 3 -->
                     <a href="https://docs.google.com/document/d/13Fcu2g1oveTTXSW3OFv25AKAw8WkjbDW/edit?usp=drive_link&ouid=113099956698033087957&rtpof=true&sd=true" target="_blank" class="tag" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(14, 165, 233, 0.2); border: 1px solid #0ea5e9; color: #0ea5e9; transition: all 0.3s;" onmouseover="this.style.background='#0ea5e9'; this.style.color='#fff';" onmouseout="this.style.background='rgba(14, 165, 233, 0.2)'; this.style.color='#0ea5e9';">
                         <i class="fa-solid fa-folder-open"></i> Lihat Dokumentasi LKPD
                     </a>
-                </div>
-                <div style="border-radius:16px; overflow:hidden; border:2px solid #0ea5e9; height:300px; width: 100%; max-width: 450px; justify-self: center;">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" alt="Cloud Data Technology" style="width:100%; height:100%; object-fit:cover;">
-                </div>
-            </div>
-        </div>
-    </div>
-
-                    <!-- TOMBOL DOKUMENTASI PROYEK 3 -->
-
-                    <a href="https://docs.google.com/document/d/1KS7GO0jPLihqHqIwJf4sP98M6cDhNLAx/edit?usp=drive_link&ouid=113099956698033087957&rtpof=true&sd=true" target="_blank" class="tag" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(14, 165, 233, 0.2); border: 1px solid #0ea5e9; color: #0ea5e9; transition: all 0.3s;" onmouseover="this.style.background='#0ea5e9'; this.style.color='#fff';" onmouseout="this.style.background='rgba(14, 165, 233, 0.2)'; this.style.color='#0ea5e9';">
-
-                        <i class="fa-solid fa-folder-open"></i> Lihat Dokumentasi LKPD
-
-                    </a>
-
-                </div>
-
-                <div style="border-radius:16px; overflow:hidden; border:2px solid #0ea5e9; height:300px; width: 100%; max-width: 450px; justify-self: center;">
-
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" alt="Cloud Data Technology" style="width:100%; height:100%; object-fit:cover;">
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <!-- Slide 6: Proyek 2 -->
-    <div class="slide-container" id="slide6">
-        <h2 class="slide-title">Proyek 2: Debian Web Stack</h2>
-        <div class="content-area">
-            <div class="two-column">
-                <div style="border-radius:16px; overflow:hidden; border:2px solid #0ea5e9; height:300px; width: 100%; max-width: 450px; justify-self: center;">
-                    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=600&auto=format&fit=crop" alt="Linux Command Line Terminal" style="width:100%; height:100%; object-fit:cover;">
-                </div>
-                <div class="bullet-list">
-                    <ul>
-                        <li><i class="fa-solid fa-check-circle"></i> Linux Debian Installation & IP, SSH, Repo Config.</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Services: DHCP, DNS, Apache2, EngineX.</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Database: MariaDB, MySQL, PhpMyAdmin.</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Deployment: WordPress via Git Clone.</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tag">Debian</span><span class="tag">LEMP Stack</span><span class="tag">Git</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Slide 7: Proyek 3 -->
-    <div class="slide-container" id="slide7">
-        <h2 class="slide-title">Proyek 3: Cloud Infrastructure</h2>
-        <div class="content-area">
-            <div class="two-column">
-                <div class="bullet-list">
-                    <ul>
-                        <li><i class="fa-solid fa-check-circle"></i> Deployment Amazon EC2 & Security Groups.</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Konfigurasi VPC & Elastic IP Address.</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Load Balancing & Auto Scaling Management.</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Launch Template untuk standardisasi server.</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tag">AWS EC2</span><span class="tag">VPC</span><span class="tag">Auto Scaling</span>
-                    </div>
                 </div>
                 <div style="border-radius:16px; overflow:hidden; border:2px solid #0ea5e9; height:300px; width: 100%; max-width: 450px; justify-self: center;">
                     <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" alt="Cloud Data Technology" style="width:100%; height:100%; object-fit:cover;">
@@ -564,7 +495,7 @@
                 <div class="number-box"><span class="num">02</span><span class="label">Problem Solving</span></div>
                 <div class="number-box"><span class="num">03</span><span class="label">Profesionalisme</span></div>
             </div>
-            <p style="text-align: center; margin-top: 30px; max-width: 900px; align-self: center;">Membantu perusahaan dalam manajemen infrastruktur IT harian sambil menyerap ilmu praktis dari industri.</p>
+            <p style="text-align: center; margin-top: 30px; max-width: 900px; align-self: center;">Membantu perusahaan dalam manajemen infrastruktur IT harian menyerap ilmu praktis dari industri.</p>
         </div>
     </div>
 
@@ -572,14 +503,16 @@
     <div class="slide-container" id="slide11">
         <h2 class="slide-title">Visi</h2>
         <div class="content-area" style="text-align: center;">
-            <p style="font-size: 32px; font-family: 'Poppins'; color: #f8fafc; font-style: italic;">"Mendedikasikan keahlian di bidang Network, Server, dan Cloud secara profesional, disiplin, dan patuh pada SOP demi mendukung kelancaran operasional IT perusahaan."</p>
-            <cite style="color: #0ea5e9; font-size: 18px;"></cite>
+            <p style="font-size: 28px; font-family: 'Poppins'; color: #f8fafc; font-style: italic; max-width: 900px; margin: 0 auto;">
+                "Mendedikasikan keahlian di bidang Network, Server, dan Cloud secara profesional, disiplin, dan patuh pada SOP demi mendukung kelancaran operasional IT perusahaan."
+            </p>
+            <cite style="color: #0ea5e9; font-size: 18px; display: block; margin-top: 15px;">- Hilal Aulia Hasbi</cite>
         </div>
     </div>
 
     <!-- Slide 11.5: Sertifikasi -->
     <div class="slide-container" id="sertifikasi">
-        <h2 class="slide-title">Sertifikasi Internasional</h2>
+        <h2 class="slide-title">Sertifikasi </h2>
         <div class="content-area">
             <div class="tiled-content">
                 <div class="tile">
@@ -599,7 +532,7 @@
     </div>
 
     <!-- Slide 12: Kontak -->
-<div class="slide-container" id="slide12">
+    <div class="slide-container" id="slide12">
         <div class="title-layout">
             <h2 style="font-size: 36px; margin-bottom: 20px;">Mari Berdiskusi</h2>
             <p style="margin-bottom: 30px;">Saya siap untuk berkontribusi secara produktif di perusahaan Anda.</p>
@@ -621,3 +554,6 @@
             </div>
         </div>
     </div>
+
+</body>
+</html>
